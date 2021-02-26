@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SURVEY</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Survey form</h1>
+            <p id="description">All about you</p>
+        </header>
+        
+
+        <form method="GET" action="#" id="survey-form">
+            <!-- Name -->
+            <div class="name">
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" id="name" name="name" placeholder="First & Last" required>
+            </div>
+            <!-- Email -->
+            <div class="email">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="user@place.com" required>
+            </div>
+            <!-- Age -->
+            <div class="age">
+                <label for="dropdown" id="age">Age:</label>
+                <select id="dropdown" name="age">
+                    <option value="under-18">Under 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-older">55 and older</option>
+                </select>
+            </div>
+            <!-- Number -->
+            <div class="number">
+                <label for="number" id="number-label">Pick a number!</label>
+                <input type="number" id="number" min="1" max="100" placeholder="18">
+            </div>
+            <!-- Gender -->
+            <div class="gender">
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female" checked>Female
+                    </label>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male">Male
+                    </label>
+                    <label for="other">
+                        <input type="radio" name="gender" id="other" value="other">Other
+                    </label>
+                    <label for="prefer-not-to-say">
+                        <input type="radio" name="gender" id="prefer-not-to-say" value="prefer-not-to-say">Prefer not to say
+                    </label>
+                </fieldset>
+            </div>
+            <!-- Hobbies -->
+            <div class="hobbies">
+                <fieldset>
+                    <legend>Hobbies:</legend>
+                    
+                    <label for="drinking-coffee">
+                        <input type="checkbox" name="hobbies" id="drinking-coffee" value="drinking-coffee">Drinking Coffee
+                    </label>
+                    <label for="coding">
+                        <input type="checkbox" name="hobbies" id="coding" value="coding">Coding
+                    </label>
+                    <label for="cooking">
+                        <input type="checkbox" name="hobbies" id="cooking" value="cooking">Cooking
+                    </label>
+                    <label for="gardening">
+                        <input type="checkbox" name="hobbies" id="gardening" value="gardening">Gardening
+                    </label>
+                    <label for="hiking">
+                        <input type="checkbox" name="hobbies" id="hiking" value="hiking">Hiking
+                    </label>
+                    <label for="music">
+                        <input type="checkbox" name="hobbies" id="music" value="music">Music
+                    </label>
+                    <label for="photography">
+                        <input type="checkbox" name="hobbies" id="photography" value="photography">Photography
+                    </label>
+                    <label for="sports">
+                        <input type="checkbox" name="hobbies" id="sports" value="sports">Sports
+                    </label>
+                    <label for="video-games">
+                        <input type="checkbox" name="hobbies" id="video-games" value="video-games">Video Games
+                    </label>
+                </fieldset>
+            </div>
+            <!-- Comments -->
+            <div class="comments">
+                <label for="comments">Anything that you would like to add?</label>
+                <textarea id="comments" rows="10" cols="20"></textarea>
+            </div>
+            <!-- Submit -->
+            <button type="submit" id="submit">Submit Survey</button>
+        </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
